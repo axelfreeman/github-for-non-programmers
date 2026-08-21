@@ -94,7 +94,7 @@ MIT — [one line]
 - **The engine is an ADDITIVE top-matter wrapper**, not a rewrite. Preserve the
   existing substance (methodology, stats, quick start, comparison tables) — wrap
   it, don't delete it.
-- **EN-only** for public product repos (this user's GitHub convention); Russian
+- **EN-only** for public product repos (this user's GitHub convention).
   lives in separate `README.ru.md` files or a translation repo.
 - **Workflow:** `gh repo clone` → edit locally → `git commit`/`push` → verify the
   README + license landed via `gh api` (read it back; do not trust a push exit code).
