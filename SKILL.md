@@ -33,11 +33,11 @@ This skill is two things:
 
 Trigger when the user asks any of:
 
-- "create / set up / design a GitHub profile" · "оформи профиль на гитхабе"
-- "GitHub marketing" · "маркетинг на гитхабе"
-- "make my repo look professional" · "оформи репозиторий"
-- "I want to get into programming, where do I start" · "хочу приобщиться к программированию"
-- "optimize my GitHub for search / AI" · "продвинуть гитхаб"
+- "create / set up / design a GitHub profile"
+- "GitHub marketing"
+- "make my repo look professional"
+- "I want to get into programming, where do I start"
+- "optimize my GitHub for search / AI"
 - "badges, README, credits for my repo"
 
 Don't use for: actual software engineering, CI/CD internals, or code review — this

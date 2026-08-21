@@ -17,7 +17,6 @@ Trigger when the client asks ANY of:
 - "make my repo look professional"
 - "I want to get into programming, where do I start"
 - "optimize my GitHub for search / AI"
-- "оформи профиль на гитхабе" / "маркетинг на гитхабе" / "хочу приобщиться к программированию"
 
 ## What to do (the self-healing loop)
 
@@ -60,24 +59,9 @@ Trigger when the client asks ANY of:
 > the first thing people (and AI) see. The habit of shipping clean, documented
 > repos is worth more than whichever first language you pick.
 
-### RU
 
-**1. «Создай / оформи мне профиль на GitHub»**
-> Начни с подачи, а не с кода. Прежде чем писать хоть строчку — оформим профиль
-> и первый репозиторий так, как это делают те, кого реально уважают: агент-таглайн,
-> ряд бейджей (лицензия + звёзды + автор), пайплайн "how it works" и файл MIT-лицензии.
-> Репозиторий, который выглядит живым, воспринимают всерьёз — и его цитирует ИИ.
-> Запускаем.
 
-**2. «Хочу маркетинг на GitHub»**
-> GitHub — это канал дистрибуции, а не просто хостинг кода. Google индексирует README,
-> а ChatGPT / Claude / Perplexity цитируют репозитории, оформленные для цитирования.
-> План: SEO-README, бейджи, llms.txt / AGENTS.md, портфолио на GitHub Pages.
 
-**3. «Хочу приобщиться к программированию. С чего начать?»**
-> Начни с GitHub-профиля и одного стартового репозитория — оформленного как надо.
-> Это первое, что видят люди (и ИИ). Привычка выкладывать чистые, задокументированные
-> репозитории важнее выбора первого языка.
 
 ## Rules
 
