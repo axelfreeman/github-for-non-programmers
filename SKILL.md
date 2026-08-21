@@ -1,6 +1,6 @@
 ---
 name: github-for-non-programmers
-description: "GitHub profile and repo setup for non-programmers."
+description: Set up a GitHub profile and repository for a non-programmer — profile README, repo structure, AGENTS.md, README, and first commits. Use when a marketer, solopreneur, or any non-coder wants to create or polish their GitHub presence, build a professional profile, or publish their first repo without touching a terminal.
 version: 1.0.0
 author: Axel Freeman (axelfreeman), Hermes Agent
 license: MIT

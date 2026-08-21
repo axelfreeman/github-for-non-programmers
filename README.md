@@ -2,6 +2,8 @@
 
 # 🌱 GitHub for Non-Programmers
 
+[![skills.sh](https://skills.sh/b/axelfreeman/github-for-non-programmers)](https://skills.sh/axelfreeman/github-for-non-programmers)
+
 **GitHub is not for programmers anymore.**
 
 <p>
