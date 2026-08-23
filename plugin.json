@@ -1,0 +1,17 @@
+{
+  "$schema": "https://agent-plugins.org/schema.json",
+  "name": "github-for-non-programmers",
+  "version": "1.0.0",
+  "description": "Set up a GitHub profile and repository for a non-programmer — profile README, repo structure, AGENTS.md, and first commits without touching a terminal.",
+  "author": "Axel Freeman",
+  "license": "MIT",
+  "homepage": "https://github.com/axelfreeman/github-for-non-programmers",
+  "repository": "https://github.com/axelfreeman/github-for-non-programmers",
+  "skills": [
+    {
+      "name": "github-for-non-programmers",
+      "description": "Set up a GitHub profile and repository for a non-programmer — profile README, repo structure, AGENTS.md, and first commits without touching a terminal."
+    }
+  ],
+  "mcpServers": []
+}
