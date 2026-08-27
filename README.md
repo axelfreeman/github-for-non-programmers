@@ -100,3 +100,17 @@ MIT — use it, remix it, ship it.
 ## Author
 
 [Axel Freeman](https://github.com/axelfreeman) — AI-native marketer · [tapacapi.com](https://tapacapi.com)
+---
+
+## For the technical folks — real code
+
+The playbook ships with four copy-paste files (MIT, no dependencies):
+
+| File | What it does |
+|---|---|
+| `scripts/insert-tracker.py` | Idempotent analytics insertion across all `.html` |
+| `scripts/fix-canonical.py` | Adds self-canonical to every page missing one |
+| `scripts/generate-sitemap.py` | Emits a valid `sitemap.xml` from a page list |
+| `scripts/nginx-vhost.conf` | Static vhost next to a Docker neighbor + HTTPS |
+
+You don't need to write a line — point an AI agent at these and it runs them.

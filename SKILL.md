@@ -1,7 +1,7 @@
 ---
 name: github-for-non-programmers
 description: Set up a GitHub profile and repository for a non-programmer — profile README, repo structure, AGENTS.md, README, and first commits. Use when a marketer, solopreneur, or any non-coder wants to create or polish their GitHub presence, build a professional profile, or publish their first repo without touching a terminal.
-version: 1.0.0
+version: 1.1.0
 author: Axel Freeman (axelfreeman), Hermes Agent
 license: MIT
 platforms: [linux, macos, windows]
@@ -110,6 +110,46 @@ Run this as a loop, not a single pass. Each cycle fixes what the last one broke.
 
 Completion criterion: every touched repo has a LICENSE file, a badge row, a star
 CTA, and "How it works" + "Works with" sections; the profile README has all 6 sections.
+
+## What we shipped in the last 2 weeks (real cases, Aug 2026)
+
+This playbook stops being theory once you ship. What a non-programmer actually
+shipped end-to-end, and what mattered most:
+
+1. **`voice-to-article` → skills.sh** — packaged the dictation→article pipeline as
+   a public skill (`npx skills add axelfreeman/voice-to-article`), released v2.2.0.
+2. **A static travel site (`spbilo.ru`)** — voice notes → frames → pages → gallery →
+   map. 20 pages, 3 languages, deployable from a laptop.
+3. **Deploying next to someone else's Docker app** — one server, their container on
+   port 80. The move: add your OWN `server_name` block, mount your static as a
+   volume, don't touch their config. Nginx routes by Host header.
+   (`scripts/nginx-vhost.conf`)
+4. **HTTPS in one shot** — `certbot certonly --webroot`, then 301 http→https.
+5. **Privacy analytics (Umami)** — self-hosted, one `data-website-id` per site,
+   an idempotent inserter script on a timer. (`scripts/insert-tracker.py`)
+6. **SEO/AEO hardening** — self-canonical on every page, sitemap, `llms.txt` +
+   `AGENTS.md`, explicit AI-bot allows in robots.txt, `datePublished` on articles.
+
+**The "critical" list (what actually mattered):**
+
+- canonical + sitemap + robots are the floor, not the ceiling;
+- orphan pages kill internal linking — give every page an inbound link;
+- a page linked from nowhere might as well not exist;
+- AI bots (GPTBot, ClaudeBot, PerplexityBot) must be allowed or you can't be cited.
+
+## For the technical folks — the code
+
+Non-programmers don't write this by hand; an AI agent runs it. But it's here,
+copy-paste, MIT, no magic:
+
+| File | What it does |
+|---|---|
+| `scripts/insert-tracker.py` | Idempotent analytics/tracker insertion across all `.html` |
+| `scripts/fix-canonical.py` | Adds self-canonical to every page missing one |
+| `scripts/generate-sitemap.py` | Emits a valid `sitemap.xml` from a page list |
+| `scripts/nginx-vhost.conf` | Static-site vhost that coexists with a Docker neighbor + HTTPS |
+
+Each is a plain Python/nginx file — no framework, no build step, no dependencies.
 
 ## Pitfalls
 
