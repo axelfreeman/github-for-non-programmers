@@ -114,3 +114,9 @@ The playbook ships with four copy-paste files (MIT, no dependencies):
 | `scripts/nginx-vhost.conf` | Static vhost next to a Docker neighbor + HTTPS |
 
 You don't need to write a line — point an AI agent at these and it runs them.
+
+## Need this done for you?
+
+The stack behind this repo runs as a service: [marketing engineering, turnkey](https://axelfreeman.com/marketing-engineer.html) —
+Sprint $900 one-time, Engine $1,900/month, full build $2,900. Scope, deliverables and prices are published before the first call,
+and the live artifacts in this repo are part of the proof: [proof.html](https://axelfreeman.com/proof.html).
